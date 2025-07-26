@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Hammad - Mechanical Engineer CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0d47a1, #1976d2);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        header .title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin: 0 auto 20px;
+            background: #e3f2fd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: #1976d2;
+        }
+        
+        .about-me {
+            background: #e3f2fd;
+            padding: 25px 40px;
+            font-style: italic;
+            border-bottom: 2px solid #bbdefb;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .sidebar {
+            flex: 1;
+            min-width: 300px;
+            background: #f1f8ff;
+            padding: 30px;
+        }
+        
+        .main-content {
+            flex: 2;
+            min-width: 300px;
+            padding: 30px;
+            border-left: 1px solid #e0e0e0;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            color: #1976d2;
+            border-bottom: 2px solid #bbdefb;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .contact-info, .personal-data {
+            margin-bottom: 25px;
+        }
+        
+        .contact-info div, .personal-data div {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info i, .personal-data i {
+            width: 30px;
+            color: #1976d2;
+            font-size: 1.2rem;
+        }
+        
+        .experience-item, .project-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        
+        .experience-item:last-child, .project-item:last-child {
+            border-bottom: none;
+        }
+        
+        .experience-title {
+            font-size: 1.3rem;
+            color: #0d47a1;
+            margin-bottom: 5px;
+        }
+        
+        .company, .duration {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        
+        .duration {
+            color: #1976d2;
+        }
+        
+        .responsibilities {
+            padding-left: 20px;
+        }
+        
+        .responsibilities li {
+            margin: 8px 0;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .skill-category {
+            background: #f1f8ff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-5px);
+        }
+        
+        .skill-category h3 {
+            color: #1976d2;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .skill-category ul {
+            padding-left: 20px;
+        }
+        
+        .skill-category li {
+            margin: 8px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0d47a1;
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            
+            .main-content {
+                border-left: none;
+                border-top: 1px solid #e0e0e0;
+            }
+            
+            header {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-image">
+                <i class="fas fa-user"></i>
+            </div>
+            <h1>MOHAMED HAMMAD</h1>
+            <div class="title">Mechanical Engineer</div>
+            <div class="graduation">Graduation Year 2007</div>
+        </header>
+        
+        <div class="about-me">
+            <p>I would like to get a job as a mechanical engineer in a high-quality engineering environment where I can utilize my experiences and skills to contribute to the company's growth and development.</p>
+        </div>
+        
+        <div class="content">
+            <div class="sidebar">
+                <div class="section contact-info">
+                    <h2 class="section-title">CONTACT ME</h2>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>+966 54 651 7409</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <span>Enghammad79@gmail.com</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Makkah - KSA</span>
+                    </div>
+                </div>
+                
+                <div class="section personal-data">
+                    <h2 class="section-title">PERSONAL DATA</h2>
+                    <div>
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>15/07/1979</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-passport"></i>
+                        <span>Egyptian</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-user"></i>
+                        <span>Married</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-car"></i>
+                        <span>Valid driver's license</span>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">DESIGN EXPERTISE</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-wind"></i> HVAC Systems</h3>
+                            <ul>
+                                <li>DX systems (Split units, Package units, DX AHU)</li>
+                                <li>Chilled water systems (Air cooled, Water cooled)</li>
+                                <li>Ventilation systems</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3><i class="fas fa-fire-extinguisher"></i> Firefighting Systems</h3>
+                            <ul>
+                                <li>Sprinkler systems</li>
+                                <li>Gas-based systems (CO2, FM200)</li>
+                                <li>Manual firefighting systems</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3><i class="fas fa-faucet"></i> Plumbing Systems</h3>
+                            <ul>
+                                <li>Water supply & sewer drainage</li>
+                                <li>Grey water & irrigation systems</li>
+                                <li>Swimming pool design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="section">
+                    <h2 class="section-title">WORK EXPERIENCE</h2>
+                    
+                    <div class="experience-item">
+                        <div class="experience-title">Site Engineer</div>
+                        <div class="company">Taam Construction & Development Co. L.L.C - Makkah, Saudi Arabia</div>
+                        <div class="duration">SEP. 2018 – FEB. 2019</div>
+                        <ul class="responsibilities">
+                            <li>Managed multiple HVAC projects, prepared schedules, and estimated equipment costs</li>
+                            <li>Ensured all HVAC equipment complied with engineering standards and codes</li>
+                            <li>Performed troubleshooting and installed equipment according to requirements</li>
+                            <li>Designed flow drawings and prepared layouts</li>
+                            <li>Coordinated with HVAC equipment contractors</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-title">HVAC Engineer</div>
+                        <ul class="responsibilities">
+                            <li>Designed plans for HVAC equipment and ensured proper installation</li>
+                            <li>Developed plans to upgrade HVAC equipment and increase efficiency</li>
+                            <li>Managed multiple HVAC projects, prepared schedules and estimated costs</li>
+                            <li>Performed troubleshooting and installed equipment according to requirements</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-title">Fire Fighting Engineer</div>
+                        <ul class="responsibilities">
+                            <li>Documented engineering and production processes to ensure fire code compliance</li>
+                            <li>Performed tests on fire equipment and reviewed fire exits</li>
+                            <li>Evaluated fire systems to ensure compliance with protection codes</li>
+                            <li>Performed corrective maintenance on inadequate fire protection equipment</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <div class="experience-title">Plumbing Engineer</div>
+                        <ul class="responsibilities">
+                            <li>Extensive experience in plumbing, building services & sanitary works</li>
+                            <li>Familiar with piping and plumbing materials</li>
+                            <li>Proficient in vent systems, rain drainage systems and pumping systems</li>
+                            <li>Performed tests on equipment and materials according to specifications</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">PROJECTS</h2>
+                    
+                    <div class="project-item">
+                        <div class="experience-title">Dhahiat Sumou Project - 84 Villas</div>
+                        <div class="company">Taam Construction Projects</div>
+                        <div class="duration">SEP. 2018 – FEB. 2019</div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="experience-title">Dhahiat Sumou Sales Center - 4502 m²</div>
+                        <div class="company">Taam Construction Projects</div>
+                        <div class="duration">SEP. 2018 – FEB. 2019</div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="experience-title">Bijad Al Harbi Hotel - 130 Rooms (Supervision)</div>
+                        <div class="company">Taam Construction Projects</div>
+                        <div class="duration">SEP. 2018 – FEB. 2019</div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">MEP DESIGN ENGINEER</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-wind"></i> HVAC Design</h3>
+                            <ul>
+                                <li>DX systems (Split units, Package units, DX AHU)</li>
+                                <li>Chilled water systems (Air cooled, Water cooled)</li>
+                                <li>Ventilation systems (kitchens, toilets, parking)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3><i class="fas fa-fire-extinguisher"></i> Firefighting Design</h3>
+                            <ul>
+                                <li>Sprinkler system according to hazard classification</li>
+                                <li>Gas-based systems (Carbon Dioxide, FM200)</li>
+                                <li>Manual firefighting systems (Water & Gas)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3><i class="fas fa-faucet"></i> Plumbing Design</h3>
+                            <ul>
+                                <li>Water supply & Sewer drainage system</li>
+                                <li>Grey water & irrigation systems</li>
+                                <li>Swimming Pool design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Mohamed Hammad - Mechanical Engineer | Page 1 of 2</p>
+        </footer>
+    </div>
+</body>
+</html>
